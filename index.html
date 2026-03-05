@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbearia Elite</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 40px;
+    background: gold;
+    color: black;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e6c200;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services, .prices, .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.cta-final {
+    background: gold;
+    color: black;
+    padding: 60px 20px;
+}
+
+footer {
+    background: black;
+    padding: 30px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Barbearia Elite</h1>
+    <p>Estilo, tradição e precisão em cada corte</p>
+    <button class="btn" onclick="window.location.href='https://wa.me/5500000000000'">
+        Agendar pelo WhatsApp
+    </button>
+</header>
+
+<section>
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Corte Masculino</h3>
+            <p>Estilo moderno com acabamento perfeito.</p>
+        </div>
+        <div class="card">
+            <h3>Barba</h3>
+            <p>Modelagem e cuidado profissional.</p>
+        </div>
+        <div class="card">
+            <h3>Combo Premium</h3>
+            <p>Corte + Barba com preço especial.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Tabela de Preços</h2>
+    <div class="prices">
+        <div class="card">
+            <h3>Corte</h3>
+            <p>R$ 45</p>
+        </div>
+        <div class="card">
+            <h3>Barba</h3>
+            <p>R$ 35</p>
+        </div>
+        <div class="card">
+            <h3>Combo</h3>
+            <p>R$ 70</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Sobre Nós</h2>
+    <div style="max-width: 800px; margin: auto; margin-top: 30px; line-height: 1.6;">
+        <p>
+            Há mais de 10 anos oferecendo cortes modernos e atendimento premium.
+            Nossa missão é elevar sua autoestima através de estilo, precisão e experiência diferenciada.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>O que nossos clientes dizem</h2>
+    <div class="testimonials">
+        <div class="card">
+            <p>"Melhor barbearia da cidade!"</p>
+            <strong>- Carlos</strong>
+        </div>
+        <div class="card">
+            <p>"Atendimento impecável e corte perfeito."</p>
+            <strong>- Rafael</strong>
+        </div>
+    </div>
+</section>
+
+<section class="cta-final">
+    <h2>Pronto para renovar seu visual?</h2>
+    <p style="margin: 20px 0;">Agende agora e viva a experiência Elite.</p>
+    <button class="btn" style="background:black; color:gold;"
+        onclick="window.location.href='https://wa.me/5500000000000'">
+        Agendar Agora
+    </button>
+</section>
+
+<footer>
+    <p>© 2026 Barbearia Elite - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
